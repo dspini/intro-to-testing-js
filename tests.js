@@ -16,24 +16,38 @@ describe('helloWorld', function() {
 
 // Exercise #1
 describe('sayHello', function() {
-    it('should be a defined function', function() {
+    it('should be a defined function', function () {
         expect(typeof sayHello).toBe('function');
     });
 //Exercise #2
-    it('should return a string when called', function() {
+    it('should return a string when called', function () {
         expect(typeof sayHello()).toBe("string");
     });
 //Exercise #3
-    it('should return the string "Hello, Jane!" when executed', function() {
+    it('should return the string "Hello, Jane!" when executed', function () {
         expect(sayHello("Jane")).toBe("Hello, Jane!");
     });
 //Exercise #4
-    it('should return the string "Hello, Alex!" when executed', function() {
+    it('should return the string "Hello, Alex!" when executed', function () {
         expect(sayHello("Alex")).toBe("Hello, Alex!");
     });
 //Exercise #5
-    it('should return the string "Hello, Pat!" when executed', function() {
+    it('should return the string "Hello, Pat!" when executed', function () {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
-//Exercise #6
+//Exercise #6 Refactor
+//Exercise #7 GitHub
+//Exercise #8
+//     it('should return the string "Hello, World!" when executed', function () {
+//         expect(typeof sayHello()).toBe("Hello, World!");
+//     });
+//     it('should return the string "Hello, World!" when executed', function () {
+//         expect(typeof sayHello(true)).toBe("Hello, World!");
+//     });
+    it('should return the string "Hello, World!" when executed', function () {
+        expect(sayHello(false)).toBe("Hello, World!");
+    });
 });
+
+
+

@@ -9,7 +9,12 @@ function helloWorld() {
 // }git
 
 function sayHello(input) {
-    return "Hello, " + input + "!";
+    if (input === false) {
+        return ("Hello, World!");
+    } else {
+        return ("Hello, " + input + "!");
+    }
+}
     // if (input === "Alex") {
     //     return "Hello, Alex!";
     // } else if (input === "pat") {
@@ -17,6 +22,6 @@ function sayHello(input) {
     // } else {
     //     return "Hello, Pat!"
     // }
-}
+
 
 
