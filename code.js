@@ -8,7 +8,15 @@ function helloWorld() {
 //     return "Hello, World!";
 // }git
 
-function sayHello() {
-    return ""
+function sayHello(input) {
+    return "Hello, " + input + "!";
+    // if (input === "Alex") {
+    //     return "Hello, Alex!";
+    // } else if (input === "pat") {
+    //     return "Hello Jane!";
+    // } else {
+    //     return "Hello, Pat!"
+    // }
 }
+
 
