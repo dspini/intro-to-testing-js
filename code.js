@@ -2,6 +2,7 @@
 function helloWorld() {
     return "Hello, World!";
 }
+console.log(helloWorld());
 
 // function expression syntax (assigning an anonymous function to a variable)
 // const helloWorld = function() {
@@ -10,12 +11,15 @@ function helloWorld() {
 
 //Exercise #1 - #9
 function sayHello(input) {
-    if (input === false) {
+    if (input !== true) {
         return ("Hello, World!");
     } else {
+        if (input === "World");
         return ("Hello, " + input + "!");
     }
 }
+console.log(sayHello());
+
     // if (input === "Alex") {
     //     return "Hello, Alex!";
     // } else if (input === "pat") {
@@ -26,15 +30,18 @@ function sayHello(input) {
 
 //Exercise #10
 function isFive(input) {
-    return true;
+    return input === 5;
 }
+console.log(isFive());
 
 //Exercise #11
 function isEven(input) {
-    return input === Infinity;
+    return input === 2;
 }
+console.log(isEven());
 
 //Exercise #12
-function isVowel() {
-
+function isVowel(input) {
+    return input === "banana";
 }
+console.log(isVowel());
