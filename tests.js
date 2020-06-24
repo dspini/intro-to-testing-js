@@ -7,9 +7,9 @@ describe('helloWorld', function() {
       expect(typeof helloWorld()).toBe("string");
     });
     it('should return the string "Hello, World!" when executed', function() {
-      expect(helloWorld()).toBe("Hello, World!");
+      expect(helloWorld()).toBe('Hello, World!');
     });
-    it("should never return 'undefined' when called", function() {
+    it('should never return "undefined" when called', function() {
       expect(helloWorld()).not.toBe(undefined);
     });
 });
@@ -21,19 +21,19 @@ describe('sayHello', function() {
     });
 //Exercise #2
     it('should return a string when called', function () {
-        expect(typeof sayHello()).toBe("string");
+        expect(typeof sayHello()).toBe('string');
     });
 //Exercise #3
     it('should return the string "Hello, Jane!" when executed', function () {
-        expect(sayHello("Jane")).toBe("Hello, Jane!");
+        expect(sayHello('Jane')).toBe('Hello, Jane!');
     });
 //Exercise #4
     it('should return the string "Hello, Alex!" when executed', function () {
-        expect(sayHello("Alex")).toBe("Hello, Alex!");
+        expect(sayHello('Alex')).toBe('Hello, Alex!');
     });
 //Exercise #5
     it('should return the string "Hello, Pat!" when executed', function () {
-        expect(sayHello("Pat")).toBe("Hello, Pat!");
+        expect(sayHello('Pat')).toBe('Hello, Pat!');
     });
 //Exercise #6 Refactor
 //Exercise #7 GitHub
@@ -45,21 +45,38 @@ describe('sayHello', function() {
 //         expect(typeof sayHello(true)).toBe("Hello, World!");
 //     });
     it('should return the string "Hello, World!" when executed', function () {
-        expect(sayHello(false)).toBe("Hello, World!");
+        expect(sayHello(false)).toBe('Hello, World!');
     });
 });
+
 //Exercise #10
 describe('isFive', function() {
     it('should be a defined function', function () {
         expect(typeof isFive).toBe('function');
     });
-    it("should never return 'undefined' when called", function () {
+    it('should never return "undefined" when called', function () {
         expect(isFive()).not.toBe(undefined);
     });
-    it("isFive should return boolean when called", function () {
+    it('isFive should return boolean when called', function () {
         expect(typeof isFive(5)).toBe("boolean");
     });
-    it("isFive should return boolean when called", function () {
+    it('isFive should return boolean when called', function () {
         expect(isFive(5)).toBe(true);
+    });
+});
+
+//Exercise #11
+describe('isEven', function() {
+    it('should be a defined function', function () {
+        expect(typeof isEven).toBe('function');
+    });
+    it('isEven should return boolean when called', function () {
+        expect(typeof isEven()).toBe("boolean");
+    });
+    it('isEven should return boolean when called', function () {
+        expect(typeof isEven(true)).toBe("boolean");
+    });
+    it('isEven should return boolean when called', function () {
+        expect(typeof isEven(false )).toBe("boolean");
     });
 });
