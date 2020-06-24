@@ -48,6 +48,18 @@ describe('sayHello', function() {
         expect(sayHello(false)).toBe("Hello, World!");
     });
 });
-
-
-
+//Exercise #10
+describe('isFive', function() {
+    it('should be a defined function', function () {
+        expect(typeof isFive).toBe('function');
+    });
+    it("should never return 'undefined' when called", function () {
+        expect(isFive()).not.toBe(undefined);
+    });
+    it("isFive should return boolean when called", function () {
+        expect(typeof isFive(5)).toBe("boolean");
+    });
+    it("isFive should return boolean when called", function () {
+        expect(isFive(5)).toBe(true);
+    });
+});

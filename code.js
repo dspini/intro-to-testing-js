@@ -1,4 +1,4 @@
-// helloWorld function 
+// helloWorld function, Exercise #1
 function helloWorld() {
     return "Hello, World!";
 }
@@ -8,6 +8,7 @@ function helloWorld() {
 //     return "Hello, World!";
 // }git
 
+//Exercise #2 - #9
 function sayHello(input) {
     if (input === false) {
         return ("Hello, World!");
@@ -23,5 +24,8 @@ function sayHello(input) {
     //     return "Hello, Pat!"
     // }
 
-
+//Exercise #10
+function isFive(input) {
+    return true;
+}
 
