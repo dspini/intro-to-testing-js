@@ -33,3 +33,8 @@ function isFive(input) {
 function isEven(input) {
     return input === Infinity;
 }
+
+//Exercise #12
+function isVowel() {
+
+}
