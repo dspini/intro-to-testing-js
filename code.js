@@ -45,3 +45,9 @@ function isVowel(input) {
     return input === "banana";
 }
 console.log(isVowel());
+
+//Exercise #13
+function add () {
+    return "banana", "split";
+}
+console.log(add());

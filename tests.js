@@ -21,7 +21,7 @@ describe('sayHello', function() {
     });
 //Exercise #2
     it('should return a string when called', function () {
-        expect(typeof sayHello()).toBe('string');
+        expect(typeof sayHello()).toBe("string");
     });
 //Exercise #3
 //     it('should return the string "Hello, Jane!" when executed', function () {
@@ -94,5 +94,15 @@ describe('isVowel', function() {
     });
     it('should return boolean when called', function () {
         expect(typeof isVowel("aeiouAEIOU")).not.toBe(false);
+    });
+});
+
+//Exercise #13
+describe('add', function() {
+    it('should be a defined function', function () {
+        expect(typeof add).toBe('function');
+    });
+    it('should return a boolean when called', function () {
+        expect(typeof add()).not.toBe("boolean");
     });
 });
