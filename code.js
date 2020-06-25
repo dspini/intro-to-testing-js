@@ -1,53 +1,50 @@
-// helloWorld function
+// // helloWorld function
 function helloWorld() {
     return "Hello, World!";
 }
-console.log(helloWorld());
 
 // function expression syntax (assigning an anonymous function to a variable)
 // const helloWorld = function() {
 //     return "Hello, World!";
 // }git
 
-//Exercise #1 - #9
-function sayHello(input) {
-    if (input !== true) {
-        return ("Hello, World!");
+// // sayHello function
+let sayHello  = function (name) {
+    if (typeof name === 'string' && name.length > 0 && isNaN(Number(name))) {
+        return "Hello, " + name + "!";
     } else {
-        if (input === "World");
-        return ("Hello, " + input + "!");
+        return "Hello, World!";
     }
 }
-console.log(sayHello());
 
-    // if (input === "Alex") {
-    //     return "Hello, Alex!";
-    // } else if (input === "pat") {
-    //     return "Hello Jane!";
-    // } else {
-    //     return "Hello, Pat!"
-    // }
-
-//Exercise #10
-function isFive(input) {
-    return input === 5;
+// // isFive function
+let isFive = function (input) {
+    return(input == 5);
 }
-console.log(isFive());
 
-//Exercise #11
-function isEven(input) {
-    return input === 2;
+// // isEven function
+let isEven = function (input) {
+    if (typeof input === 'number' || typeof input === 'string') {
+        let num = Number(input);
+        return num % 2 === 0;
+    } else {
+        return false;
+    }
 }
-console.log(isEven());
 
-//Exercise #12
-function isVowel(input) {
-    return input === "banana";
+// // isVowel function
+let isVowel = function (input) {
+    let vowels = 'aeiou';
+    return (typeof input === 'string' && vowels.indexOf(input.toLowerCase()) !== -1);
 }
-console.log(isVowel());
 
-//Exercise #13
-function add () {
-    return "banana", "split";
+// // add function
+let add = function(x, y) {
+    let numX = Number(x);
+    let numY = Number(y);
+    if(numX && numY) {
+        return numX + numY;
+    } else {
+        return NaN;
+    }
 }
-console.log(add());
